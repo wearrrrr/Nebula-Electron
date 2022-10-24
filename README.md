@@ -1,10 +1,25 @@
 # Nebula-Electron
-An Electron implementation of nebula-web
+Now overhauled!
+Nebula Electron is now faster, runs on a locally hosted server, and cannot be blocked as long as you can run the program.
 
-This app should be very simple to run as it is the laziest implementation I could do
+# What is Nebula-Electron?
+Nebula-Electron is an electron build of the popular proxy Nebula that runs on NodeJS.
 
-npm i
+# How do I build Nebula-Electron?
+It's Simple!
+```
+npm install --save-dev electron-packager
+npx electron-packager ./ Nebula --icon=logo.ico
+```
+Or for yarn:
+```
+yarn add electron-packager
+npx electron-packager ./ Nebula --icon=logo.ico
+```
+This is a fully functioning build of Nebula, however .asar packing **does not work!**, No clue why, it just fails to find Nebula's app.js
 
-npm start
-
-if this doesn't work you probably did something wrong
+Credits: 
+<br>
+[Nebula](https://github.com/NebulaServices/Nebula) 
+<br>
+[Electron-Packager](https://github.com/electron/electron-packager)
