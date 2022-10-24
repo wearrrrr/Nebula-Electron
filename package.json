@@ -1,27 +1,27 @@
 {
-  "name": "nebula-electron",
-  "version": "1.0.0",
+  "name": "nebula_electron",
+  "version": "0.0.1",
   "description": "",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "main": "index.js",
+  "build": {
+    "appId": "com.nebulaservices.nebulaElectron",
+    "mac": {
+      "category": "electron.proxy"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wearrqqws/Nebula-Electron.git"
+  "scripts": {
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wearrqqws/Nebula-Electron/issues"
-  },
-  "homepage": "https://github.com/wearrqqws/Nebula-Electron#readme",
-  "devDependencies": {
-    "electron": "^19.0.6"
-  },
   "dependencies": {
-    "node-fetch": "^2.6.7",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "electron": "^21.2.0",
+    "electron-packager": "^17.0.0"
   }
 }
